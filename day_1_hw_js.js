@@ -321,4 +321,32 @@ console.log();
 console.log( "The largest personal account holder is", largestPersonalAccountHolder( accounts ) );
 
 //Section 8
+
+console.log();
+console.log("---------------------");
+console.log("-     Section 7     -");
+console.log("---------------------");
+
 //Assign a variable myPerson to a hash, giving them a name, height, favourite food and an eat method
+var eatFunction = function( foodString ) {
+
+  if ( foodString === this.favouriteFood ) {
+
+    console.log( "Wow I love", this.favouriteFood );
+
+  } else {
+
+    console.log( "Oh " + foodString + ", great... I guess I can eat that..." );
+  }
+}
+
+var myPerson = {
+  name: "Cedric",
+  height: 1.85,
+  favouriteFood: "bananas",
+  eat: eatFunction
+};
+
+console.log();
+myPerson.eat( "toast" );
+myPerson.eat( "bananas" );
