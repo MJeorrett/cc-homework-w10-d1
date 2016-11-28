@@ -324,7 +324,7 @@ console.log( "The largest personal account holder is", largestPersonalAccountHol
 
 console.log();
 console.log("---------------------");
-console.log("-     Section 7     -");
+console.log("-     Section 8     -");
 console.log("---------------------");
 
 //Assign a variable myPerson to a hash, giving them a name, height, favourite food and an eat method
@@ -332,7 +332,7 @@ var eatFunction = function( foodString ) {
 
   if ( foodString === this.favouriteFood ) {
 
-    console.log( "Wow I love", this.favouriteFood );
+    console.log( "Wow I love " + this.favouriteFood + "!!!!!" );
 
   } else {
 
